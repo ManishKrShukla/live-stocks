@@ -12,7 +12,7 @@ You can access the live app directly @ https://immense-basin-28669.herokuapp.com
 
 Here's how the chart looks : 
 
-![Alt text](https://ibb.co/gb3bFF "Line Chart for stock updates")
+![Line Chart for stock updates](https://preview.ibb.co/gFcQ9a/live_stocks_chart.png)
 
 Wanna run this locally ? Just : 
 
