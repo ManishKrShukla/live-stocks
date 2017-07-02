@@ -10,6 +10,10 @@ live-stocks-server : a namesake server, running on express, using websockets to 
 
 You can access the live app directly @ https://immense-basin-28669.herokuapp.com/
 
+Here's how the chart looks : 
+
+![Alt text](https://ibb.co/gb3bFF "Line Chart for stock updates")
+
 Wanna run this locally ? Just : 
 
 1. download the repo
