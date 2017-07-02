@@ -14,6 +14,10 @@ Here's how the chart looks :
 
 ![Line Chart for stock updates](https://preview.ibb.co/gFcQ9a/live_stocks_chart.png)
 
+And the table : 
+
+![Table for stock updates](https://preview.ibb.co/e95TUa/live_stocks_table.png)
+
 Wanna run this locally ? Just : 
 
 1. download the repo
