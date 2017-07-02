@@ -26,3 +26,17 @@ Wanna run this locally ? Just :
 4. hit nodemon app.js in the live-stocks-server. 
 
 And you're good to go.
+
+
+A one stop shop for everything used in this repo : 
+
+Client:
+1. Angular 2 CLI [https://github.com/angular/angular-cli]
+2. MomentJS
+3. Bootstrap
+4. Highcharts
+
+Server: 
+1. Express
+2. Websockets [https://github.com/websockets/ws]
+3. Nodemon [Dev dependency]
