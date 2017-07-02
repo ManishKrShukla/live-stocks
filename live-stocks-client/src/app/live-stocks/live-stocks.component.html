@@ -1,0 +1,40 @@
+<p class="pull-right">Last update at : {{lastUpdate}}</p>
+
+<div class="col-xs-12 toggle-view">
+    <button type="button" (click)="toggleView()" *ngIf="!isChartView" class="pull-right btn btn-primary">Switch To Chart View</button>
+    <button type="button" (click)="toggleView()" *ngIf="isChartView" class="pull-right btn btn-primary">Switch To Table View</button>
+</div>
+
+<app-heatmap-chart 
+    *ngIf="isChartView" 
+    [identifier]="'live-stocks'"
+    [data]="rows"
+    [categories]="timeLabels"
+    [yAxisTitle]="'Stock Price'"
+    [title]="'Stock Price Listing'"
+    [maxRows]="10"
+></app-heatmap-chart>
+
+
+<div class="container"> 
+    <table class="table table-condensed table-hover" *ngIf="!isChartView">
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Price</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr *ngFor="let row of rows" [ngClass]="{'success' : row.state =='positive', 'danger' : row.state =='negative'}">
+                <td>{{row.name}}</td>
+                <td>{{row.data[row.data.length - 1]}}</td>
+                <td>{{row.lastUpdatedTime}}</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>

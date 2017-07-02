@@ -1,0 +1,1 @@
+export const WS_SRC = 'ws://localhost:8080/';
